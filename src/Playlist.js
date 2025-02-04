@@ -166,6 +166,10 @@ export default class {
     this.barWidth = width;
   }
 
+  setRounded(rounded) {
+    this.rounded = rounded;
+  }
+
   setBarGap(width) {
     this.barGap = width;
   }
@@ -966,6 +970,7 @@ export default class {
       colors: this.colors,
       barWidth: this.barWidth,
       barGap: this.barGap,
+      rounded: this.rounded,
     };
 
     return _defaults({}, data, defaults);
@@ -1012,6 +1017,7 @@ export default class {
           height: collapsed ? this.collapsedWaveHeight : this.waveHeight,
           barGap: this.barGap,
           barWidth: this.barWidth,
+          rounded: this.rounded,
         })
       );
     });
